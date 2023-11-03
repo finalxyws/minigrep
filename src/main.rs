@@ -8,7 +8,7 @@ fn main() {
 
     let config = Config::build(args.as_slice()).unwrap_or_else(|err| {
         println!("Problem parsing arguments: {}", err);
-        std::process::exit(1);
+        process::exit(1);
     });
 
     println!("Searching for {}", config.query);
